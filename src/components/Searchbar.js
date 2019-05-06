@@ -5,9 +5,10 @@ class Search extends React.Component {
     term: ""
   };
 
-  handleSubmit(event) {
+  handleSubmit = event => {
     event.preventDefault();
-  }
+    console.log(this.state.term);
+  };
 
   render() {
     return (
