@@ -1,3 +1,9 @@
+Welcome to a [React course](https://www.udemy.com/share/100YAOB0oeeFtUTXo=/) found on [Udemy](https://www.udemy.com/share/100YAOB0oeeFtUTXo=/).
+Down below, you'll come accross the basic readMe created with any create-react-app project.
+Don't pay attention to it if you're exclusively looking for infos about this very project.
+Have a nice day ;)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
