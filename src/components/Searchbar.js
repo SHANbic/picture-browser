@@ -5,18 +5,20 @@ class Search extends React.Component {
     term: ""
   };
 
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
   render() {
     return (
       <div className="ui segment">
-        <form className="ui form">
+        <form className="ui form" onSubmit={this.handleSubmit}>
           <div className="field">
             <label>Image search</label>
             <input
               type="text"
               value={this.state.term}
-              onChange={e => 
-                this.setState({ term: e.target.value })
-              }
+              onChange={e => this.setState({ term: e.target.value })}
             />
           </div>
         </form>

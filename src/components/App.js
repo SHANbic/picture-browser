@@ -3,7 +3,7 @@ import Search from "./Searchbar";
 
 const App = () => {
   return (
-    <div className="ui container" style={{marginTop:'1rem'}}>
+    <div className="ui container" style={{ marginTop: "1rem" }}>
       <Search />
     </div>
   );
