@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const ImageList = props => {
-  console.log(props.images)
-  return <div>image list</div>
-}
+  const imageList = props.images.map(image => {
+    return <li><img src={image.urls.small} /></li>;
+  });
+  return <ul style={{listStyleType:'none'}}>{imageList}</ul>;
+};
 
-export default ImageList
+export default ImageList;
