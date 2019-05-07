@@ -18,7 +18,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "1rem" }}>
+        <h1>Photo library</h1>
         <SearchBar onSubmit={this.onSearchSubmit} />
+        <p style={{ fontSize: ".8rem", textAlign: "right" }}>
+          <a
+            href="https://unsplash.com/"
+            title="opens Unsplash website in a new tab"
+            target="_blank"
+          >
+            powered by Unsplash
+          </a>
+        </p>
         <ImageList images={this.state.images} />
       </div>
     );
