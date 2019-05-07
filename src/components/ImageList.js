@@ -1,14 +1,13 @@
 import React from "react";
+import "./ImageList.css";
 
 const ImageList = props => {
-  const imageList = props.images.map(image => {
+  const images = props.images.map(image => {
     return (
-      <li key={image.id}>
-        <img src={image.urls.small} alt={image.alt_description} />
-      </li>
+      <img key={image.id} src={image.urls.small} alt={image.alt_description} />
     );
   });
-  return <ul style={{ listStyleType: "none" }}>{imageList}</ul>;
+  return <div className="image-list">{images}</div>;
 };
 
 export default ImageList;
